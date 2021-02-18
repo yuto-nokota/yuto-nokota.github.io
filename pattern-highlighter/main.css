@@ -1,0 +1,95 @@
+body {
+  width:80%;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+header {
+  color: #fff;
+  display: block;
+  width:100%;
+  background-color: #203a61;
+  text-align: left;
+  overflow: hidden;
+	margin: 20px 0 20px;
+	border-radius: 6px;
+	height: 150px;
+	width: 100%;
+}
+
+header h1 {
+  color: #fff;
+  font-size:24px;
+  left: calc(10% + 30px);
+  top : 96px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.left {
+  float : left;
+  width : 50%;
+}
+
+.right {
+  float : right;
+  width : 50%;
+}
+
+.right div {
+  width: 90%;
+}
+
+.left textarea {
+  width: 90%;
+  font-size:100%;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+footer {
+  clear:both;
+  color: #fff;
+  font-size: 80%;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #203a61;
+	margin: 20px 0 20px;
+	border-radius: 6px;
+}
+
+.balloon {
+  background-color:#ffff00;
+  position: relative;
+}
+
+.balloon:hover .discription {
+  display:inline;
+}
+
+.balloon .discription {
+  position: absolute;
+  display: none;
+  padding: 2px;
+  background-color: #ffff00;
+  border-radius:5pt;
+  width:180px;
+  right : -204px;
+  font-size: 80%;
+}
+
+.balloon .discription:after {
+  position: absolute;
+  border-right: 12px solid #ffff00;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -12px;
+  top: 5%;
+  content: "";
+}
+
+
