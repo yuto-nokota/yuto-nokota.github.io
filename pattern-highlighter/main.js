@@ -12,14 +12,14 @@ window.onload= function () {
     );
   }
   let realtimeOnChange = function () {
-    var str = input.value.replace(/\n/g,"<br>");
+    var str = input.value;
     for ( key in regexps ) {
       var match = str.match(new RegExp(regexps[key].pattern,"g"));
       for ( i in match ) {
         var substr = match[i];
         if ( !substr.match(new RegExp(excepts.pattern)) ) {
-          str = str.replace(""+substr
-            , "<span class='balloon' class='" + key + "'>" + substr
+          str = str.split(""+substr).join(
+              "<span class='balloon' class='" + key + "'>" + substr
             + "<span class='discription'>" + key + "</span>"
             + "</span>"
           );
@@ -27,7 +27,7 @@ window.onload= function () {
       }
     }
     input.setAttribute("rows",Math.max(20,(input.value+"\n").match(/\n/g).length+2));
-    result.innerHTML = str;
+    result.innerHTML = str.replace(/\n/g,"<br>");
   }
   let pre="",cur="";
   let id = window.setInterval(function(){
