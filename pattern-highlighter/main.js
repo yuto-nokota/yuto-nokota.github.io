@@ -12,7 +12,14 @@ window.onload= function () {
     );
   }
   let realtimeOnChange = function () {
-    var str = input.value;
+    var str = input.value
+                .replace(/&/g,"&amp;")
+                .replace(/"/g,"&quot;")
+                .replace(/'/g,"&#39;")
+                .replace(/</g,"&lt;")
+                .replace(/>/g,"&gt;")
+                .replace(/ /g,"&nbsp;")
+                .replace(/\\/g,"&yen;");
     for ( key in regexps ) {
       var match = str.match(new RegExp(regexps[key].pattern,"g"));
       for ( i in match ) {
