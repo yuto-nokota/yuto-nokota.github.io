@@ -3,8 +3,8 @@
 body {
   font: 14px/1.6,"メイリオ";
   margin:0;
-  color:#303030;
-  background-color: #F0F0F0;
+  color:#013220;
+  background-color: #FFFFFF;
 }
 
 img {
@@ -51,10 +51,10 @@ header a:hover {
 }
 
 header{
-  color: #000000;
+  color: #FFFFFF;
   display: block;
   width:100%;
-  background-color: #C0C0C0;
+  background-color: #013220;
   text-align: center;
   overflow: hidden;
 }
@@ -68,7 +68,7 @@ header h1{
   margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  border:1px solid #0F0F0F;
+  border:1px solid #C0C0C0;
   border-radius: 5px;
   letter-spacing: 3px;
   font-weight:400;
@@ -77,7 +77,7 @@ header h1{
 header p{
   margin-left: 10%;
   font-size:100%;
-  color:#000000;
+  color:#FFFFFF;
   float: left;
 }
 
@@ -109,7 +109,7 @@ nav li:last-child{
 }
 
 nav li:hover{
-  background-color: #C0C0C0;
+  background-color: #013220;
   transition: background-color 0.5s ease-out;
   color: #ffffff;
 }
@@ -161,11 +161,11 @@ main p {
 }
 
 footer {
-  color: #404040;
+  color: #C0C0C0;
   font-size: 80%;
   width: 100%;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #C0C0C0;
+  background-color: #013220;
 }
