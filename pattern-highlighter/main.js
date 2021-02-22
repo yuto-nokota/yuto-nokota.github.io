@@ -21,7 +21,7 @@ window.onload= function () {
                 .replace(/ /g,"&nbsp;")
                 .replace(/\\/g,"&yen;");
     for ( key in regexps ) {
-      var match = str.match(new RegExp(regexps[key].pattern,"g"));
+      var match = Array.from(new Set(str.match(new RegExp(regexps[key].pattern,"g"))));
       for ( i in match ) {
         var substr = match[i];
         if ( !substr.match(new RegExp(excepts.pattern)) ) {
