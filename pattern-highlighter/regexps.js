@@ -11,4 +11,9 @@ let regexps = {
     "bgcolor":"#ffff00",
     "fgcolor":"#000000"
   },
+  "Tel": {
+    "pattern":"(0\\d{2,3}-\\d{1,4}-\\d{4})|((070|080|090|050)-\\d{4}-\\d{4})",
+    "bgcolor":"#ffff00",
+    "fgcolor":"#000000"
+  },
 };
