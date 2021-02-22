@@ -21,9 +21,8 @@ window.onload= function () {
                 .replace(/ /g,"&nbsp;")
                 .replace(/\\/g,"&yen;");
     for ( key in regexps ) {
-      var match = Array.from(new Set(str.match(new RegExp(regexps[key].pattern,"g"))));
-      for ( i in match ) {
-        var substr = match[i];
+      var match = new Set(str.match(new RegExp(regexps[key].pattern,"g"))); // match and uniq
+      for ( substr of match ) {
         if ( !substr.match(new RegExp(excepts.pattern)) ) {
           str = str.split(""+substr).join(
               "<span class='balloon' class='" + key + "'>" + substr
