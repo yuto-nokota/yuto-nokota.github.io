@@ -114,6 +114,26 @@ nav li:hover{
   color: #ffffff;
 }
 
+nav a{
+  color:#FF5500;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav a:visited {
+  color:#CC5500;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+nav a:hover {
+  color: #FFFF00;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 main {
   color: #000000;
   display: block;
