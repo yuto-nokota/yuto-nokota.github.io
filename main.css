@@ -91,6 +91,7 @@ nav{
 nav ul{
   width: 60%;
   margin-left: 20%;
+  list-style: none;
 }
 nav li{
   width: calc(25% - 2px);
