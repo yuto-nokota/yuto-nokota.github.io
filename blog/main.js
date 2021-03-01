@@ -2,7 +2,7 @@ function onload () {
   if ( _GET['content_id'] ) {
     let content = document.getElementById('content');
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', _GET['content_id']+".html", true);
+    xhr.open('GET', "./contents/"+_GET['content_id']+".html", true);
     xhr.onload = function () {
       if ( xhr.status == 404 ) {
         content.innerHTML = "<h1>404 NOT Found</h1><div>specified content is NOT found.</div>";
