@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2021 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>カップ麺タイマー</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</head>
+<body onload='onload()'>
+<header>
+  <h1>カップ麺タイマー</h1>
+   スタートすると「麺」がどんどん伸びていきます．
+  「麺」の縮尺がちょうどよくなったら3分です．</br>
+  <input type='button' onClick='start()'value='スタート'>
+  <input type='button' onClick='stop()' value='ストップ'>
+  <input type='button' onClick='reset()'value='リセット'>
+</header>
+<main>
+  <div id='men' class='men'>麺</div>
+</main>
+<footer>
+  Copyright (c) 2021 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>
