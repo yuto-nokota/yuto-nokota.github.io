@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.sakura-bg {
+  font-size : 256px;
+  margin:0;
+  height:1024px;
+  width:100%;
+  text-align : center;
+  color:#000000;
+  background-color: #FFEEEE;
+}
+
+.sakura-fg {
+  text-align : center;
+  color:#FFCCCC;
+  background-color: #FFEEEE;
+  float : left;
+  position : absolute;
+}
+
+
