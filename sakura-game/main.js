@@ -32,6 +32,7 @@ function create () {
   sakura.innerHTML = sakura_str[rnd];
   sakura.onclick = ( rnd < 2 ) ? function(){collect(sakura)} : function(){wrong(sakura)};
   sakura.style.left = ( Math.random() * (innerWidth-400) + 200 ) + "px";
+  sakura.style.top      = h + "px";
   // move animation
   sakura.animation = function () {
     sakura.style.top = (h+=velocity) + "px";
