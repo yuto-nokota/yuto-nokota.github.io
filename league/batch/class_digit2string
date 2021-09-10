@@ -1,0 +1,31 @@
+#!/bin/bash
+
+read digit
+int=${digit%%\.*}
+test -z "${int}" && int=0
+
+echo "${int}"
+
+case "${int}" in 
+  "1"  ) echo "SS";;
+  "2"  ) echo "S";;
+  "3"  ) echo "A";;
+  "4"  ) echo "B1";;
+  "5"  ) echo "B2";;
+  "6"  ) echo "C1";;
+  "7"  ) echo "C2";;
+  "8"  ) echo "D1";;
+  "9"  ) echo "D2";;
+  "10" ) echo "D3";;
+  "11" ) echo "D4";;
+  "12" ) echo "D5";;
+  "13" ) echo "D6";;
+  "14" ) echo "D7";;
+  "15" ) echo "D8";;
+  "16" ) echo "D9";;
+  "17" ) echo "D10";;
+  "18" ) echo "E";;
+  *) echo "error";;
+esac
+
+

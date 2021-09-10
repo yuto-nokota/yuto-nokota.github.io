@@ -1,0 +1,5 @@
+name_1(as string) class_1(as ...) levelup_point(as integer)
+name_2(as string) class_2(as ...) levelup_point(as integer)
+...
+name_N(as string) class_N(as ...) levelup_point(as integer)
+

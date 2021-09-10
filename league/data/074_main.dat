@@ -1,0 +1,20 @@
+number N
+
+name_1 class_1
+name_2 class_2
+...
+name_N class_N
+
+matches M
+name_1 name_3
+name_3 name_4
+...
+name_N-1 name_N
+name_1 name_3
+name_2 name_4
+...
+name_x name_N
+...
+M times
+
+
