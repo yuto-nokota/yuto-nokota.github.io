@@ -34,7 +34,14 @@ function stop () {
 }
 
 function reset () {
+  let e=document.getElementsByName('time');
+  let time=180;
+  for ( let i=0; i<e.length; i++ ) {
+    if ( e.item(i).checked ) {
+      time = e.item(i).value; break;
+    }
+  }
   t=0;
-  w= t/180000*0.9+0.1;
+  w= t/(time*1000)*0.9+0.1;
   document.getElementById("men").style.transform = "scale(" + w + ",1.0)";
 }
