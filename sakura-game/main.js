@@ -41,7 +41,11 @@ function create () {
   }
   timer=setInterval(sakura.animation,T);
   document.getElementById('sakura').appendChild(sakura)
-  setTimeout(function(){clearInterval(timer);sakura.remove();},8000);
+  setTimeout(function(){
+    clearInterval(timer);
+    if ( rnd < 2 ) document.getElementById('score').innerHTML = 'SCORE :' + (--score);
+    sakura.remove();
+  },8000);
 }
 
 function onload () {
