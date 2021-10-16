@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.main-table {
+  border-collapse : collapse;
+  border : 2px;
+}
+
+td {
+  width  : 30px;
+  height : 30px;
+  border-width : 1.2px;
+}
+
+select {
+  width  : 40px;
+  height : 40px;
+  border-width : 1.2px;
+  font-size : 12px;
+}
+
+.solve {
+  width  : 64px;
+  height : 32px;
+  font-size : 18px;
+}
+
+.status {
+  width  : 512;
+  height : 64px;
+  font-size : 18px;
+  font-family : Consolas, 'Courier New', Courier, Monaco;
+}
+
