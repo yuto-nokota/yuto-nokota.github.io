@@ -8,6 +8,12 @@ const sine = {
   'MainFrequencyIndex' : 1,
   'reals' : Array(2).fill().map((_,i)=>i==0?0:1),
   'imags' : Array(2).fill().map((_,i)=>i==0?0:1)
-}
+};
+
+const pink = {
+  'MainFrequencyIndex' : 1,
+  'reals' : Array(256).fill().map((_,i)=>i==0?0:1/i),
+  'imags' : Array(256).fill().map((_,i)=>i==0?0:1/i)
+};
 
 
