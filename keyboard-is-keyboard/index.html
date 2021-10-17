@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2021 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>Keyboard is Kyeboard</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./keyboardLayouts.js"></script>
+  <script type="text/javascript" src="./tones.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</head>
+<body onload='onload_function()'>
+<header>
+  <h1>Keyboard is Kyeboard</h1>
+</header>
+<main>
+  <div> select tone.</div>
+  <input type='radio' name='tone' id='sine'     value='sine'     onchange='toneChange()'checked> <label for='sine'    >Sine    </label>
+  <input type='radio' name='tone' id='gaussian' value='gaussian' onchange='toneChange()'       > <label for='gaussian'>Gaussian</label>
+  <div> Select keyboard layout.</div>
+  <input type='radio' name='keylayout'id='jp106' value='sine' onchange='keylayoutChange()'checked> <label for='jp106'>Sine</label>
+</main>
+<footer>
+  Copyright (c) 2021 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>
