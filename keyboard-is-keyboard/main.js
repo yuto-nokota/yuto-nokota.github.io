@@ -63,8 +63,7 @@ function initOscillator ( i ) {
   oscillators[i].setPeriodicWave = oscillators[i].setPeriodicWave || oscillators[i].setWaveTable;
   oscillators[i].setPeriodicWave(periodicwave);
   oscillators[i].connect(context.destination);
-  //oscillators[i].frequency.value=frequencies[i]/tone.MainFrequencyIndex;
-  oscillators[i].frequency.value=frequencies[i];
+  oscillators[i].frequency.value=frequencies[i]/tone.MainFrequencyIndex;
   oscillatorsStarted[i] = false;
 }
 
