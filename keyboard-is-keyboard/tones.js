@@ -28,3 +28,8 @@ const white = {
   'imags' : Array(32).fill().map((_,i)=>i==0?0:1)
 };
 
+const delta3 = {
+  'MainFrequencyIndex' : 62,
+  'reals' : Array(256).fill().map((_,i)=>i==0?0:(i%64>60?4:0)/Math.floor(i/64+4)),
+  'imags' : Array(256).fill().map((_,i)=>i==0?0:(i%64>60?4:0)/Math.floor(i/64+4))
+};
