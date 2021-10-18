@@ -22,3 +22,9 @@ const exp = {
   'imags' : Array(32).fill().map((_,i)=>i==0?0:Math.exp(-(i-1)))
 };
 
+const white = {
+  'MainFrequencyIndex' : 1,
+  'reals' : Array(32).fill().map((_,i)=>i==0?0:1),
+  'imags' : Array(32).fill().map((_,i)=>i==0?0:1)
+};
+

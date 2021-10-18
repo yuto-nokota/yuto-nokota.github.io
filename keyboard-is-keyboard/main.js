@@ -7,7 +7,7 @@ let frequencies = Array(64).fill().map((_,i)=>442*Math.pow(2,(i-keyLayout.SoundA
 let oscillators = Array(64).fill(null);
 let oscillatorsStarted = Array(64).fill(false);
 
-let tone = sine;
+let tone = delta;
 
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 let context = new AudioContext();
