@@ -29,7 +29,9 @@ const white = {
 };
 
 const delta3 = {
-  'MainFrequencyIndex' : 62,
-  'reals' : Array(256).fill().map((_,i)=>i==0?0:(i%64>60?4:0)/Math.floor(i/64+4)),
-  'imags' : Array(256).fill().map((_,i)=>i==0?0:(i%64>60?4:0)/Math.floor(i/64+4))
+  'MainFrequencyIndex' : 510,
+  'reals' : Array(4096).fill().map((_,i)=>i==0?0:(i%512>508?2:0)/Math.floor(i/512+2)),
+  'imags' : Array(4096).fill().map((_,i)=>i==0?0:(i%512>508?2:0)/Math.floor(i/512+2))
 };
+
+
