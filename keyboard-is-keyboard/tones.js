@@ -40,4 +40,10 @@ const delta3 = {
   'imags' : Array(4096).fill().map((_,i)=>i==0?0:(i%512>508?2:0)/Math.floor(i/512+2))
 };
 
+const sinc = {
+  'MainFrequencyIndex' : 512,
+  'reals' : Array(1024).fill().map((_,i)=>i==0?0:i==512?1:Math.sin(2*Math.PI*(i-512)/10)/(2*Math.PI*(i-512)/10)),
+  'imags' : Array(1024).fill().map((_,i)=>i==0?0:i==512?1:Math.sin(2*Math.PI*(i-512)/10)/(2*Math.PI*(i-512)/10))
+};
+
 
