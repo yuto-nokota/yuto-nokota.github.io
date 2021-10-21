@@ -46,4 +46,10 @@ const sinc = {
   'imags' : Array(1024).fill().map((_,i)=>i==0?0:i==512?1:Math.sin(2*Math.PI*(i-512)/10)/(2*Math.PI*(i-512)/10))
 };
 
+const linear = {
+  'MainFrequencyIndex' : 511,
+  'reals' : Array(512).fill().map((_,i)=>i/511),
+  'imags' : Array(512).fill().map((_,i)=>i/511)
+};
+
 
