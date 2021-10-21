@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.color {
+  font-size : 256px;
+  margin:0;
+  text-align : center;
+  color:#FFFFFF;
+  background-color: #000000;
+}
+
+
+.button {
+  font-size : 20px;
+  width : 30%;
+  padding:10px;
+  margin:0;
+  text-align : center;
+}
+
+.progress_bar {
+  width : 90%;
+  height : 40px;
+}

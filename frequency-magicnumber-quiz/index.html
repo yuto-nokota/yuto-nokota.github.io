@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2021 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>Frequency Quiz</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./answers.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</head>
+<body onload='onload()'>
+<header>
+  <h1>Frequency Quiz</h1>
+  <div> Push button which matches sound.</div>
+  <input type='button' onClick='startNewGame()'value='スタート'>
+</header>
+<main>
+  <div id='color' class='color'>　</div>
+  <br>
+  <center>
+    <canvas id="progress_bar" class='progress_bar'></canvas>
+    <div id='score'>Score : 0 </div>
+    <input class='button' id='B1' type='button' style="width:128;height64px;"onClick='B1()'value='***[Hz]'>
+    <input class='button' id='B2' type='button' style="width:128;height64px;"onClick='B2()'value='***[Hz]'>
+    <input class='button' id='B3' type='button' style="width:128;height64px;"onClick='B3()'value='***[Hz]'>
+  </center>
+</main>
+<footer>
+  Copyright (c) 2021 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>
