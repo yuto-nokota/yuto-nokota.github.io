@@ -35,9 +35,9 @@ const white = {
 };
 
 const delta3 = {
-  'MainFrequencyIndex' : 510,
-  'reals' : Array(4096).fill().map((_,i)=>i==0?0:(i%512>508?2:0)/Math.floor(i/512+2)),
-  'imags' : Array(4096).fill().map((_,i)=>i==0?0:(i%512>508?2:0)/Math.floor(i/512+2))
+  'MainFrequencyIndex' : 2046,
+  'reals' : Array(2048).fill().map((_,i)=>i==0?0:(i>2044?1:0)),
+  'imags' : Array(2048).fill().map((_,i)=>i==0?0:(i>2044?1:0))
 };
 
 const sinc = {
