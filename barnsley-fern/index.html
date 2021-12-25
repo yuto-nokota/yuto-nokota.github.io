@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2021 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>Barnsley Fern</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</head>
+<body onload='resize()'>
+<header>
+  <h1>Barnsley Fern</h1>
+</header>
+<main>
+  <canvas id='canvas' width='512' height='512'></canvas></br>
+  <input type='button' value='grow'         onclick='grow(0)'/></br>
+  <input type='button' value='grow x 10'    onclick='grow(10)'/></br>
+  <input type='button' value='grow x 100'   onclick='grow(100)'/></br>
+  <input type='button' value='grow x 1000'  onclick='grow(1000)'/></br>
+  Width :<input id='width'  type='number' value='512' /></br>
+  Height:<input id='height' type='number' value='512' /></br>
+  <input type='button' value='resize' onclick='resize()'/></br>
+</main>
+<footer>
+  Copyright (c) 2021 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>
