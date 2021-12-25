@@ -40,7 +40,6 @@ function resize () {
   let context   = canvas.getContext('2d');
   let w = document.getElementById('width').value;
   let h = document.getElementById('height').value;
-  let imagedata = context.getImageData(0,0,canvas.width, canvas.height);
   canvas.width  = w ? w : 512;
   canvas.height = h ? h : 512;
   X = canvas.width / 2;
@@ -49,6 +48,10 @@ function resize () {
   t = canvas.height / 11;
   context.fillStyle='rgb(255,255,255)';
   context.fillRect(0,0,canvas.width,canvas.height);
-  imagedata.data[ Y*imagedata.width*4 + X*4 + 1] = 255;
+  let imagedata = context.getImageData(0,0,canvas.width, canvas.height);
+  imagedata.data[ Y*imagedata.width*4 + X*4 + 0] =   1;
+  imagedata.data[ Y*imagedata.width*4 + X*4 + 1] = 128;
+  imagedata.data[ Y*imagedata.width*4 + X*4 + 2] =  32;
+  imagedata.data[ Y*imagedata.width*4 + X*4 + 3] = 255;
   context.putImageData(imagedata,0,0);
 }
