@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2021 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>Count up New Year</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17N942TJLZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-17N942TJLZ');
+  </script>
+</head>
+<body>
+<header>
+  <h1>Count up New Year</h1>
+</header>
+<main>
+  <input type='radio' name='mode' id='enc' value='encode' onchange='main()'checked /> <label for='enc'>Encode</label>
+  <input type='radio' name='mode' id='dec' value='decode' onchange='main()'        /> <label for='dec'>Decode</label>
+  <hr>
+  key   :<input id='k' type='text' onkeyup='main()' /></br>
+  text  :<input id='m' type='text' onkeyup='main()' /></br>
+  cipher:<span id='c'></span>
+</main>
+<footer>
+  Copyright (c) 2021 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>
