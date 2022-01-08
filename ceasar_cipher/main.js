@@ -17,7 +17,7 @@ function main() {
   var i=0;
   document.getElementById('c').innerHTML="";
   for ( var m of document.getElementById('m').value.toLowerCase().split('') ) {
-    console.log("aaa");
+    if ( !m.match(/^[a-z]+/) ) { document.getElementById('c').innerHTML += m; continue; }
     if ( document.getElementById('enc').checked ) document.getElementById('c').innerHTML += add(m,key_array[i]);
     if ( document.getElementById('dec').checked ) document.getElementById('c').innerHTML += sub(m,key_array[i]);
     i = (i+1) % key_array.length;
