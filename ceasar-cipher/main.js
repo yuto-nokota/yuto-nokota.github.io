@@ -11,6 +11,16 @@ function sub ( x, y ) {
           'n','o','p','q','r','s','t','u','v','w','x','y','z'][(letter[x]-letter[y]+26)%26];
 }
 
+function keygen() {
+  let l = document.getElementById('l').value;
+  let k = '';
+  for ( var i=0; i<l; ++i ) {
+    k += ['a','b','c','d','e','f','g','h','i','j','k','l','m',
+          'n','o','p','q','r','s','t','u','v','w','x','y','z'][Math.floor(Math.random()*26)];
+  }
+  document.getElementById('k').value = k;
+}
+
 function main() {
   var key_array = document.getElementById('k').value.toLowerCase().split('');
   if ( key_array.length == 0 ) return;
