@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2021 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>Chess Clock</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17N942TJLZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-17N942TJLZ');
+  </script>
+</head>
+<body onload='onload()'>
+<header>
+  <h1>Chess Clock</h1>
+</header>
+<main>
+  <div id='tunes'>0</div></br>
+  <input type="number" id="max" min="10" max="300" value="30" /></br>
+  <input type="button" id="stop"  value="stop"  onclick='stop()' />
+  <table class='main-table' border='1'>
+  <tr>
+  <td id='l-button' class='main-button off-button' onclick='l_click()'><div id='left'  class='left-button' >0</div></td>
+  <td id='r-button' class='main-button off-button' onclick='r_click()'><div id='right' class='right-button'>0</div></td>
+  <tr>
+  </table>
+</main>
+<footer>
+  Copyright (c) 2021 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>

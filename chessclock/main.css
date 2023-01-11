@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.main-table {
+  width:100%;
+  height : 60vh;
+  border-collapse : collapse;
+  border : 2px;
+}
+
+.main-button {
+  width  : 50%;
+  height : 100%;
+  border-width : 2px;
+  text-align : center;
+  font-size : 10vh;
+}
+
+.left-button {
+  transform : rotate(90deg);
+}
+
+.right-button {
+  transform : rotate(-90deg);
+}
+
+.on-button {
+  background : #ffa500
+}
+
+.off-button {
+  background : #cccccc
+}
