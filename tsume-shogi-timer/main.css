@@ -2,13 +2,13 @@
 
 .main-table {
   border-collapse : collapse;
-  border: 2px #000000 solid;
+  border : 2px;
 }
 
 td {
   width  : 30px;
   height : 30px;
-  border: 2px #000000 solid;
+  border-width : 1.2px;
 }
 
 select {

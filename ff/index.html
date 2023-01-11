@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2022 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>FF</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17N942TJLZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-17N942TJLZ');
+  </script>
+</head>
+<body onload='onload()'>
+<header>
+  <h1>FF</h1>
+  <div>Multiplication table(hex ver.)</div>
+  <input type='button' onClick='startNewGame()'value='スタート'>
+</header>
+<main>
+  <div id='color' class='color'>　</div>
+  <br>
+  <center>
+    <table>
+      <tr>
+        <td><input class='button' id='BC' type='button' onClick='button_click(this.value)'value='C'></td>
+        <td><input class='button' id='BD' type='button' onClick='button_click(this.value)'value='D'></td>
+        <td><input class='button' id='BE' type='button' onClick='button_click(this.value)'value='E'></td>
+        <td><input class='button' id='BF' type='button' onClick='button_click(this.value)'value='F'></td>
+      </tr>
+      <tr>
+        <td><input class='button' id='BC' type='button' onClick='button_click(this.value)'value='8'></td>
+        <td><input class='button' id='BD' type='button' onClick='button_click(this.value)'value='9'></td>
+        <td><input class='button' id='BE' type='button' onClick='button_click(this.value)'value='A'></td>
+        <td><input class='button' id='BF' type='button' onClick='button_click(this.value)'value='B'></td>
+      </tr>
+      <tr>
+        <td><input class='button' id='BC' type='button' onClick='button_click(this.value)'value='4'></td>
+        <td><input class='button' id='BD' type='button' onClick='button_click(this.value)'value='5'></td>
+        <td><input class='button' id='BE' type='button' onClick='button_click(this.value)'value='6'></td>
+        <td><input class='button' id='BF' type='button' onClick='button_click(this.value)'value='7'></td>
+      </tr>
+      <tr>
+        <td><input class='button' id='BC' type='button' onClick='button_click(this.value)'value='0'></td>
+        <td><input class='button' id='BD' type='button' onClick='button_click(this.value)'value='1'></td>
+        <td><input class='button' id='BE' type='button' onClick='button_click(this.value)'value='2'></td>
+        <td><input class='button' id='BF' type='button' onClick='button_click(this.value)'value='3'></td>
+      </tr>
+    </table>
+    <canvas id="progress_bar" class='progress_bar'></canvas>
+    <div id='score'>Score : 0 </div>
+  </center>
+</main>
+<footer>
+  Copyright (c) 2022 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>

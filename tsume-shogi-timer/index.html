@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2021 yuto-nokota. All rights reserved. -->
+<html>
+<head lang="ja">
+  <meta charset="utf8"/>
+  <title>Tsume-shogi Timer</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./main.css">
+  <script type="text/javascript" src="../main.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17N942TJLZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-17N942TJLZ');
+  </script>
+</head>
+<body onload='onload()'>
+<header>
+  <h1>Tsume-shogi Timer</h1>
+</header>
+<main>
+  <div id='counter'>0</div></br>
+  <input type="button" id="start" value="start" onclick='start()'/>
+  <input type="button" id="stop"  value="stop"  onclick='stop()' />
+</main>
+<footer>
+  Copyright (c) 2021 yuto-nokota. All rights reserved. Released under the MIT license, see LICENSE.
+</footer>
+</body>
+</html>
