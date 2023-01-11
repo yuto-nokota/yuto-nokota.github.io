@@ -8,19 +8,21 @@ function sound ( type, sec ) {
 }
 let timer=null;
 let count=0;
+let count_max = 10;
 function clock () {
   let type = 'triangle'
   count++;
   document.getElementById('counter').innerHTML=count;
-  if ( count == 10 ) sound(type,0.15);
-  if ( count >= 20 && count <= 24 ) sound(type,0.15);
-  if ( count == 25 ) sound(type,4.99);
-  if ( count == 30 ) { sound(type,0.15); count=0; }
+  if ( count == count_max )     { sound(type,0.15); count=0; return; }
+  if ( count == count_max - 5 ) { sound(type,4.99); return; }
+  if ( ( count >= count_max - 10 ) && ( count < count_max - 5 ) ) { sound(type,0.15); return; }
+  if ( ( count_max - count)%10 == 0 ) { sound(type,0.15); return; }
 }
 
 function start () {
   if ( timer ) clearInterval(timer);
   let interval = 1000;
+  count_max = document.getElementById('max').value;
   console.log(interval)
   timer=setInterval(clock,interval);
 }
