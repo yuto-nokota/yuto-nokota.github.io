@@ -1,3 +1,4 @@
+let oscillator = null;
 function sound ( type, sec ) {
   const ctx = new AudioContext();
   const osc = ctx.createOscillator();
@@ -5,6 +6,7 @@ function sound ( type, sec ) {
   osc.connect(ctx.destination);
   osc.start();
   osc.stop(sec);
+  oscillator = osc;
 }
 
 let timer=null;
@@ -29,7 +31,6 @@ function start () {
   if ( timer ) clearInterval(timer);
   let interval = 1000;
   count_max = document.getElementById('max').value;
-  console.log(interval)
   timer=setInterval(clock,interval);
 }
 
@@ -37,6 +38,7 @@ function stop () {
   count=0;
   target=null;
   clearInterval(timer);
+  if ( oscillator ) oscillator.stop();
 }
 
 function l_click () {
