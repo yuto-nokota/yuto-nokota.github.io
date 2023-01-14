@@ -6,6 +6,7 @@ function sound ( type, sec ) {
   osc.connect(ctx.destination);
   osc.start();
   osc.stop(sec);
+  oscillator = osc;
 }
 let timer=null;
 let count=0;
