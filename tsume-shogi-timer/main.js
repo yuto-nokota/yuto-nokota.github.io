@@ -1,3 +1,4 @@
+let oscillator = null;
 function sound ( type, sec ) {
   const ctx = new AudioContext();
   const osc = ctx.createOscillator();
@@ -29,6 +30,7 @@ function start () {
 function stop () {
   count=0;
   clearInterval(timer);
+  if ( oscillator ) oscillator.stop();
 }
 function onload () {
 }
