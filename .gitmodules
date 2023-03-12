@@ -1,0 +1,3 @@
+[submodule "GenshinArtifacter.js"]
+	path = GenshinArtifacter.js
+	url = git@github.com:yuto-nokota/GenshinArtifacter.js.git
